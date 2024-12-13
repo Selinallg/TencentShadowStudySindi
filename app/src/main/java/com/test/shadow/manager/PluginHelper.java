@@ -26,8 +26,8 @@ public class PluginHelper {
      * 动态加载的插件包，里面包含以下几个部分，插件apk，插件框架apk（loader apk和runtime apk）, apk信息配置关系json文件
      */
     public final static String sPluginZip = DEBUG ? "plugin-debug.zip" : "plugin-release.zip";
-    public File pluginManagerFile;
-    public File pluginZipFile;
+    public File pluginManagerFile; //插件管理apk
+    public File pluginZipFile; //插件包
     public ExecutorService singlePool = Executors.newSingleThreadExecutor();
     private Context mContext;
 
